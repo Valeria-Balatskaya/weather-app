@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">    
+            <link rel="stylesheet" href="src/style.css">
+            <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="page">
+        <form class="search-form" id="city-search-form">
+            <div class="row">
+                <div class="col-7">
+            <input type="search" id="city-search-input" placeholder="Type a city..." 
+             class="form-control" 
+             autofocus="on"/>
+                </div>
+                <div class="col-2">
+            <input type="submit" value="Search" 
+            class="form-control btn btn-primary" />
+                </div>
+                <div class="col-2">
+                <button class="locationBtn" id="current-location"> Current </button>
+                </div>
+            </div>
+        </form>
+       
+   <h1 id="city">
+    Kyiv
+   </h1> 
+   <h2>
+    ☀️
+   </h2>
+   <h3 id="date"> 
+    Monday 14:23
+   </h3>
+   <hr />
+   <div class="row">
+    <p class="temperature">
+    <div class="col maxMin frames one">
+   min
+   <br />
+   <span id="minimum">
+   20</span><span>°</span>
+ 
+ </div>
+ <div class="col maxMin currently">
+    <span id="main-temp-indicator">
+   27</span><span>°</span>
+ </div>
+ <div class="col maxMin frames two">
+   max
+   <br />
+   <span id="maximum">
+   30 </span><span>°</span>
+ </div>
+</div>
+ </p>
+<p class="feels">
+    Feels like <span id="feels-like">10</span><span>°</span>
+</p>
+ <div class="row">
+ <p class="day">
+    <div class="mg">
+    <div class="col weekDays">
+        Tue
+    </div>
+    </div>
+    <div class="mg">
+    <div class="col weekDays">
+        Wed
+    </div>
+    </div>
+    <div class="mg">
+    <div class="col weekDays">
+        Thu
+    </div>
+    </div>
+    <div class="mg">
+    <div class="col weekDays">
+        Fri
+    </div>
+    </div>
+    <div class="mg">
+    <div class="col weekDays">
+        Sat
+    </div>
+    </div>
+    <div class="mg">
+    <div class="col weekDays">
+        Sun
+    </div>
+    </div>
+ </p>
+</div>
+<div class="row">
+    <div class="col-2 prediction">
+<div class="card" style="width: 5rem; background-color:#8dc6ff">
+    <div class="card-body">
+        <h5 class="card-title">🌤</h5>
+        <p class="card-text">24°</p>
+    </div>
+</div>
+</div>
+<div class="col-2 prediction">
+<div class="card" style="width: 5rem; background-color: #8dc6ff">
+    <div class="card-body">
+        <h5 class="card-title">🌥</h5>
+        <p class="card-text">29°</p>
+    </div>
+</div>
+</div>
+<div class="col-2 prediction">
+<div class="card" style="width: 5rem; background-color: #8dc6ff">
+    <div class="card-body">
+        <h5 class="card-title">🌦</h5>
+        <p class="card-text">31°</p>
+    </div>
+</div>
+</div>
+<div class="col-2 prediction ">
+<div class="card" style="width: 5rem; background-color: #8dc6ff">
+    <div class="card-body">
+        <h5 class="card-title">🌧</h5>
+        <p class="card-text">32°</p>
+    </div>
+</div>
+</div>
+<div class="col-2 prediction">
+<div class="card" style="width: 5rem; background-color: #8dc6ff">
+    <div class="card-body">
+        <h5 class="card-title">⚡</h5>
+        <p class="card-text">34°</p>
+    </div>
+</div>
+</div>
+<div class="col-2 prediction">
+<div class="card" style="width: 5rem; background-color: #8dc6ff">
+    <div class="card-body">
+        <h5 class="card-title">🌪</h5>
+        <p class="card-text">29°</p>
+    </div>
+</div>
+</div>
+</div>
+</div>
+<script src="src/index.js"></script>
+  </div>
+</body>
+</html>

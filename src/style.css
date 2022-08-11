@@ -1,0 +1,126 @@
+ body {
+     background: #2c3e50;
+     /* fallback for old browsers */
+     background: -webkit-linear-gradient(to bottom, #3498db, #2c3e50);
+     /* Chrome 10-25, Safari 5.1-6 */
+     background: linear-gradient(to bottom, #3498db, #2c3e50);
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+ }
+
+ h1 {
+     text-align: center;
+     font-family: 'Signika Negative', sans-serif;
+     margin: 30px 0px;
+     color: #27296d;
+ }
+
+ h2 {
+     text-align: center;
+     font-size: 60px;
+ }
+
+ .maxMin {
+     font-family: 'Signika Negative', sans-serif;
+     text-align: center;
+     margin: 20px 0px;
+     color: #8dc6ff
+ }
+
+ .currently {
+     font-size: 33px;
+
+ }
+
+ .frames {
+     border: 2px solid #27296d;
+     padding: 0px;
+     max-width: 50px;
+     border-radius: 5px;
+     background-color: #5256d62c;
+
+ }
+
+ .one {
+     position: relative;
+     left: 110px;
+ }
+
+ .two {
+     position: relative;
+     right: 110px;
+ }
+
+ h3 {
+     text-align: center;
+     font-family: 'Signika Negative', sans-serif;
+     margin: 30px 0px;
+     color: #27296d;
+ }
+
+ .weekDays {
+     font-family: 'Signika Negative', sans-serif;
+     text-align: center;
+     border: 2px solid #27296d;
+     border-radius: 10px;
+     color: #8dc6ff;
+     background-color: #5256d694;
+     padding: 0px 37.4px;
+ }
+
+ .mg {
+     margin: 0px 1px;
+ }
+
+ .page {
+     max-width: 600px;
+     margin: 0 auto;
+     text-align: center;
+ }
+
+ .prediction {
+     margin: 7px 0px;
+     padding: 0px 13px;
+     color: #1761c8;
+     font-family: 'Signika Negative', sans-serif;
+     font-size: larger;
+     margin-bottom: 80px;
+ }
+
+ .card-title {
+     font-size: 30px;
+ }
+ .search-form {
+    margin-top: 30px;
+ }
+ .btn-primary {
+     color: #fff;
+     background-color:#27296dd3;
+     border-color: #27296d;
+ }
+ .btn-primary:hover {
+     color: #fff;
+     background-color: #27296d;
+     border-color: #27296d;
+     transition: 200ms ease-in-out;
+ }
+ .feels {
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #8dc6ff82;
+ }
+ .locationBtn {
+    background-color: #27296dd3;
+    color: #fff;
+    border: 1px solid #27296d;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    border-radius: 5px;
+ }
+ .locationBtn:hover {
+     color: #fff;
+     background-color: #27296d;
+     border-color: #27296d;
+     transition: 200ms ease-in-out;
+ }
