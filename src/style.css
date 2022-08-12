@@ -124,3 +124,10 @@
      border-color: #27296d;
      transition: 200ms ease-in-out;
  }
+ .link {
+     text-align: center;
+ }
+
+ .name {
+     font-family: 'Signika Negative', sans-serif;
+ }
