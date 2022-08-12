@@ -35,6 +35,13 @@ function showTemperature(response) {
    document.querySelector("#maximum").innerHTML = Math.round(response.data.main.temp_max);
   document.querySelector("#minimum").innerHTML = Math.round(response.data.main.temp_min);
   document.querySelector("#feels-like").innerHTML = Math.round(response.data.main.feels_like);
+  let iconElement = document.querySelector("#iconWeather");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  
+
 }
 function searchCity(city) { 
 let apiKey = `06424eced0efe9ad8879d306e48fe09a`;
@@ -63,4 +70,4 @@ function showCurrentLocation(event){
 let currentLocation = document.querySelector("#current-location");
 currentLocation.addEventListener("click", showCurrentLocation);
 
-searchCity("London");
+searchCity("Kyiv");
