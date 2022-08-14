@@ -28,6 +28,31 @@ dateHeading.innerHTML = formatDate(currentTime);
 
 //
 
+  let forecastHTML = `<div class="row">`;
+  let daysTwo = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri" ];
+  daysTwo.forEach(function(day) { 
+        <div class="mg">
+            <div class="col weekDays">
+                ${day}
+        </div>
+        </p>
+        <div class="prediction">
+            <div class="card first" style="width: 5rem; background-color:#8dc6ff">
+                <div class="card-body firsts">
+                    <img src="http://openweathermap.org/img/wn/04d@2x.png" alt="" width="60px" class="iconTwo">
+                    <p class="card-text">24°
+                        <br />
+                        <span class="style">17°</span>
+                    </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+`;})
+ forecastHTML = forecastHTML + `</div>`;
+  forecastElement.innerHTML = forecastHTML;
+}
+
 function showTemperature(response) {
   console.log(response.data)
     document.querySelector("#city").innerHTML = response.data.name;
@@ -35,13 +60,11 @@ function showTemperature(response) {
    document.querySelector("#maximum").innerHTML = Math.round(response.data.main.temp_max);
   document.querySelector("#minimum").innerHTML = Math.round(response.data.main.temp_min);
   document.querySelector("#feels-like").innerHTML = Math.round(response.data.main.feels_like);
-  let iconElement = document.querySelector("#iconWeather");
+   let iconElement = document.querySelector("#iconWeather");
   iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  
-
 }
 function searchCity(city) { 
 let apiKey = `06424eced0efe9ad8879d306e48fe09a`;
@@ -70,4 +93,5 @@ function showCurrentLocation(event){
 let currentLocation = document.querySelector("#current-location");
 currentLocation.addEventListener("click", showCurrentLocation);
 
-searchCity("Kyiv");
+searchCity("London");
+displayForecast()

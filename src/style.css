@@ -73,7 +73,7 @@
  }
 
  .page {
-     max-width: 600px;
+     max-width: 650px;
      margin: 0 auto;
      text-align: center;
  }
@@ -131,4 +131,12 @@
  .name {
      font-family: 'Signika Negative', sans-serif;
  }
- 
+.card-body {
+    padding: 0em;
+}
+.style {
+    color: #3a4e6bdf;
+}
+.weekly {
+    padding-left: 15px;
+}
